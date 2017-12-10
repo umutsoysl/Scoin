@@ -1,4 +1,4 @@
-#Scoin Mobil Uygulama
+# Scoin Mobil Uygulama
 ![](https://github.com/umut47/Scoin/blob/master/ScreenShot/afis.jpg)
 
 Sahibinden.com bir süredir şirket içerisinde **"Scoin"** adlı kripto para birimini kullanmaktadır.Bu para biriminin kur bilgisi sürekli olarak değişmektedir.
@@ -13,7 +13,7 @@ Sahibinden.com bir süredir şirket içerisinde **"Scoin"** adlı kripto para bi
  
  ![](https://github.com/umut47/Scoin/blob/master/ScreenShot/anamenu.JPG)
  
-Scoin android mobil uygulama ne yapıyor ?
+**Scoin android mobil uygulama ne yapıyor ?**
 
 >-  Scoin güncel kurlarını uygulama içerisinde görüntülememizi sağlıyor.
 >- Scoin eski kurlarına bakılarak anlık değerinin **artıp** veya **azaldığını**  görebilmemizi sağlıyor.
