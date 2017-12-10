@@ -4,10 +4,10 @@
 Sahibinden.com bir süredir şirket içerisinde **"Scoin"** adlı kripto para birimini kullanmaktadır.Bu para biriminin kur bilgisi sürekli olarak değişmektedir.
 
 # Kullanılan Teknolojiler
-**Front-End : **  XML, photoshop
-**Back-End :**  Android java programlama
-**Database :** SQLlite
- **Kullanılan IDE :** Android Studio
+>- **Front-End : **  XML, photoshop
+>- **Back-End :**  Android java programlama
+>- **Database :** SQLlite
+>-  **Kullanılan IDE :** Android Studio
 
  **Uygulamanın Amacı**
  
