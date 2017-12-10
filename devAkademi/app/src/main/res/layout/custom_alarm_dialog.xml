@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#efefef">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView"
+                android:layout_gravity="left|center_vertical"
+                android:background="#3dab5e" />
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView5"
+                android:layout_gravity="right|center_vertical"
+                android:background="#e83e3f" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/edittext_round"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#232b37">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/fiyat"
+                    android:layout_gravity="left|center_vertical"
+                    android:textSize="20dp"
+                    android:layout_marginRight="44dp"
+                    android:textColor="#232b37"
+                    android:background="#efefef"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="7dp"
+                    android:paddingLeft="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="$"
+                    android:id="@+id/textView2"
+                    android:layout_gravity="right|center_vertical"
+                    android:textColor="#efefef"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_marginRight="8dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/edittext_round"
+                android:id="@+id/spinner">
+
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:id="@+id/imageView9"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/down_list"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Üzerine Çıktığında"
+                    android:id="@+id/spinnerText"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="#232b37"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp" />
+            </FrameLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm Oluştur"
+                android:id="@+id/btn_oky"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/edittext_round"
+                android:backgroundTint="#3bab5d"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm Kaldır"
+                android:id="@+id/btn_cancel"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/edittext_round"
+                android:backgroundTint="#e83e3f"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/imageView8"
+                android:layout_gravity="right|top"
+                android:background="@drawable/close"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp" />
+
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|top"
+                android:id="@+id/close"></RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="95dp"
+                android:background="@drawable/edittext_round"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/menu"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Üzerine Çıktığında"
+                    android:id="@+id/text_up"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#232b37"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/imageView10"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#c0bfbf"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Altına İndiğinde"
+                    android:id="@+id/text_down"
+                    android:textColor="#232b37"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

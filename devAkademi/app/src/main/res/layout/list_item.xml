@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.50"
+    android:id="@+id/panel"
+    android:focusable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="1">
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232b37"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bilgiler">
+
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|center_vertical"
+            android:background="#3dab5e" />
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView5"
+            android:layout_gravity="right|center_vertical"
+            android:background="#e83e3f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Scoin Fiyatı"
+            android:id="@+id/textView"
+            android:layout_marginLeft="25dp"
+            android:textSize="12dp"
+            android:layout_gravity="left|top"
+            android:textColor="#606160"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Scoin Tarihi"
+            android:layout_marginRight="15dp"
+            android:id="@+id/textView22"
+            android:textSize="12dp"
+            android:layout_gravity="right|top"
+            android:textColor="#606160"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="19,505500 $"
+            android:id="@+id/last"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="left|top"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="152254544254542245424"
+            android:id="@+id/date"
+            android:layout_gravity="right|top"
+            android:textColor="#979797"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp" />
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView6"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#1c222e" />
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:id="@+id/alarm"></RelativeLayout>
+
+    </FrameLayout>
+
+    </LinearLayout>

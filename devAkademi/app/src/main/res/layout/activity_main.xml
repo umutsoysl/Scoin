@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.50"
+        android:id="@+id/panel"
+        android:focusable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:weightSum="1">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="#232b37"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bilgiler">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alarmKur"
+                android:layout_margin="8dp"
+                android:layout_gravity="left|top"
+                android:background="@drawable/ic_notifications_none_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Scoin Fiyatı"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#606160"
+                android:layout_marginTop="32dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="13389.12 $"
+                android:id="@+id/last"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#ffffff"
+                android:textSize="36dp"
+                android:layout_marginTop="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="%0.4000"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#606160"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="-3.80 TL"
+                android:id="@+id/dusenFiyat"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#606160"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="15dp"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/down"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="102dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:id="@+id/alarm">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="19.525.502"
+                    android:layout_margin="5dp"
+                    android:id="@+id/date"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textColor="#7e7e7e"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Scoin ticker önceki 5 değer karşılaştırması"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#c7c7c7"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="14dp" />
+
+        </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232b37"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Son 5 kur için veriler alınıyor.Lütfen Bekleyiniz.."
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal|top"
+            android:id="@+id/mesaj"
+            android:textColor="#cfcfcf"
+            android:fontFamily="serif"
+            android:textSize="15dp" />
+
+        <org.eazegraph.lib.charts.BarChart
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:egFixedBarWidth="true"
+            app:egBarWidth="20dp"
+            android:layout_marginBottom="5dp"
+            app:egLegendHeight="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Scoin History"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#c7c7c7"
+            android:textStyle="bold"
+            android:id="@+id/historyText"
+            android:visibility="gone"
+            android:fontFamily="serif"
+            android:textSize="15dp" />
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/liste"
+            android:layout_width="fill_parent"
+            android:divider="@null"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/panel"
+            android:scrollbars="vertical" />
+
+
+
+    </LinearLayout>
+
